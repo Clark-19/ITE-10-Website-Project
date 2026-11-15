@@ -1,0 +1,144 @@
+=== PRACTICAL EXERCISE 5 NOTES ===
+Group Name: [Fill in your official group name]
+Section: [Fill in your ITE 10 section]
+Members:
+    1. Diaz, James Clark
+    2. Curato, Bj Albert
+    3. Catalla, Micah
+
+
+=== PART 1: WEB TECHNOLOGIES ===
+
+1. What is a website?
+    - A website is a collection of related web pages that are stored under one domain and can be accessed using a web browser. These pages may contain text, lists, links, images, and other information about a particular topic.
+2. What happens when a user enters a website address into a web browser?
+    - When a user enters a website address, the browser sends a request through the internet to the web server where the website is stored. The server then finds the requested page and sends it back to the browser, which reads the HTML and displays the content on the screen.
+3. What is the role of a web browser in accessing a website?
+    - A web browser allows users to access and view websites. It requests the web pages from a server or local folder, reads the files it receives, and displays their content so users can browse the pages and click links.
+4. What is the difference between HTML and CSS?
+    - HTML is used to create the structure and organize the content of a web page, such as headings and paragraphs. Meanwhile, CSS is used to control how those elements look, including their colors, fonts, spacing, and layout.
+5. Why is HTML important in creating a website?
+    - HTML is important because it provides the basic structure of a website. It organizes the content, such as text, links, lists, and images, so the browser can properly display and understand it. Without HTML, there would be no proper structure for CSS and other web technologies to work with.
+
+=== PART 2: PLANNING ===
+
+Website Title: Boardory
+    - Website Topic: A boarding-house information and comparison website for Ampayon, Butuan City, and areas near Caraga State University Main Campus.
+Purpose:
+    - The purpose of Boardory is to gather important boarding-house information in one place, such as monthly rent, deposits, utilities, house rules, and location. This will help students, workers, teachers, and other people looking for accommodation compare their options before contacting the owners.
+Target Audience:
+    - Caraga State University students, incoming college students, working individuals, teachers, university personnel, and boarding-house owners in Ampayon and nearby areas.
+Website Description:
+    - The PE5 website introduces Boardory and explains its purpose, the information included in each boarding-house listing, and the steps on how to find a boarding house. It also provides useful campus and map links, along with information about the team behind the project.
+
+Planned Sections (index.html):
+    1. What Is Boardory?
+    2. What a Boardory Listing Shows
+    3. How to Find a Boarding House
+    4. Property Photos and Walkthrough Reference
+    5. Useful Links and Resources
+    6. Learn More About Boardory
+
+Planned Sections (about.html):
+    1. Why We Made Boardory
+    2. Who Boardory Is For
+    3. Our Team
+
+Group Responsibilities:
+Member 1 - Diaz, James Clark: Project lead and technical lead. Responsible for developing the HTML pages (index.html and about.html), checking the code, and fixing errors.
+Member 2 - Curato, Bj Albert: Responsible for researching properties or boarding-house online and gathering there references also.
+Member 3 - Catalla, Micah: Responsible for researching properties or boarding-house online and gathering there references also.
+
+Image Sources:
+(file name - where it came from)
+what-is-boardory.jpg - Visual comparison guide created by Boardory Project Team 
+how-to-find-boarding-house.jpg - 5-step photo sequence created by Boardory Project Team 
+
+
+=== TEAM LOG ===
+
+2026-11-12 - Diaz, James Clark: Created the initial HTML structure for index.html and about.html.
+2026-11-13 - Curato, Bj Albert & Catalla, Micah: Gathered boarding-house references from Facebook groups, Google Maps listings, and Facebook Reels around Ampayon and Caraga State University.
+2026-11-14 - Diaz, James Clark: Double-checked the code, looked for errors, and fixed the errors found in index.html and about.html.
+
+
+=== PART 5: DEBUG LOG ===
+
+Entry 1
+Problem: In index.html, our custom visual images were displayed at their full original size, making them extremely large on the screen. This also caused steps 3 and 5 to overlap and become hidden.
+Tool Used: Browser viewport inspection and source code review.
+Fix: Added the HTML width="700" attribute directly to both img tags so the images would scale proportionally and fit the screen properly without using CSS, as required.
+
+Entry 2
+Problem: In about.html, the team table used old HTML4 presentation attributes (border, cellpadding, and cellspacing). It also had missing scope attributes on the table header cells, which were flagged as errors by the W3C Markup Validator.
+Tool Used: W3C Markup Validation Service inspection and Browser Developer Tools.
+Fix: Removed the deprecated presentation attributes and added scope="col" and scope="row" attributes to the table headers to make sure the table follows HTML5 validation standards.
+
+Network observation (file and status):
+index.html - Status 304
+about.html - Status 200
+
+
+=== PART 6: VALIDATION RESULTS ===
+
+Was index.html successfully validated?
+    - Yes. After uploading the file to the W3C Markup Validation Service, it showed zero errors.
+Was about.html successfully validated?
+    - Yes. After uploading the file to the W3C Markup Validation Service, it showed zero errors.
+What errors or warnings did you encounter?
+    - We encountered validation errors due to obsolete HTML4 table attributes, missing scope attributes on table headers, and unclosed comment tags.
+What corrections did your group make?
+    - We removed the deprecated presentation attributes from the table, added the correct scope attributes for accessibility, and properly closed all HTML comments so the files could pass validation without errors.
+
+=== PART 7A: GROUP REFLECTION ===
+
+1. Most important thing we learned:
+    - We learned how important it is to have a proper HTML5 structure, use the correct opening and closing tags, and make sure file paths are correct. These help the browser display the web pages properly, even without CSS or JavaScript.
+2. Challenges we encountered:
+    - One of our challenges was gathering complete boarding-house information because some details were scattered across different Facebook posts and Google Maps listings. Some posts did not include important information such as deposits, utility fees, house rules, or exact addresses. We also encountered errors in our HTML files, particularly with unclosed comments and mismatched tags.
+3. How we identified and solved the problems:
+    - We checked our HTML source code line by line to find the errors. We also checked the opening and closing tags, verified the file paths used in our links, and separated the information that was already confirmed from the details that still needed to be checked.
+4. Why organizing files and resources matters:
+    - Organizing our files properly helps prevent broken links and missing images. For example, keeping our HTML files in the main project folder and placing the images inside a separate images/ folder makes the project easier to manage. It also helps make sure that the website will still work when we compress it into a ZIP file and open it on another computer.
+5. How the website can be improved next:
+    - For Practical Exercise 6, we plan to improve our website by adding semantic HTML elements such as <header>, <nav>, <main>, <section>, <article>, <aside>, and <footer>. We also plan to add a structured property comparison table, create an inquiry form with proper labels and controls, and include multimedia content with text alternatives, while keeping the project strictly in pure HTML.
+
+=== PART 7B: INDIVIDUAL CONTRIBUTION STATEMENTS ===
+
+Member 1 (Diaz, James Clark):
+    - I worked on the HTML structure of index.html and about.html. I also checked and fixed the errors in the headings, lists, comments, and table markup. Aside from that, I organized the project files and made sure the pages were properly linked.
+
+Member 2 (Curato, Bj Albert):
+    - I was responsible for researching boarding houses and available properties online, particularly around Ampayon and areas near Caraga State University. I also gathered references from different online sources, such as Facebook posts and Google Maps, to help provide information and possible property listings for our project.
+
+Member 3 (Catalla, Micah):
+    - I was responsible for researching boarding houses and available properties online, particularly around Ampayon and areas near Caraga State University. I also gathered references from different online sources, such as Facebook posts and Google Maps, to help provide information and possible property listings for our project.
+
+
+=== PART 7C: INDIVIDUAL CHECK ===
+
+(Each member must answer alone in their own words without copying each other.)
+
+Member 1 (Diaz, James Clark)
+1. Difference between head and body:
+    - The <head> contains information and settings about the web page, such as the character encoding and the <title> that appears on the browser tab. Meanwhile, the <body> contains the actual content that users can see on the page, such as headings, paragraphs, lists, links, and images.
+2. Why every img needs alt:
+    - Every <img> should have an alt attribute because it describes what the image shows, especially for people who use screen readers. It is also useful when an image fails to load because users can still understand what the image is supposed to show.
+3. Relative file path and an example from our project:
+    - A relative file path is used to locate a file based on the location of the current HTML file instead of using the full computer directory. For example, in our project, we use about.html to link to our About page and images/ampayon-boarding-house.jpg to locate an image inside the images folder.
+
+Member 2 (Curato, Bj Albert)
+1. Difference between head and body:
+    - [Member 2: Write your own answer here.]
+2. Why every img needs alt:
+    - [Member 2: Write your own answer here.]
+3. Relative file path and an example from our project:
+    - [Member 2: Write your own answer here.]
+
+Member 3 (Catalla, Micah)
+1. Difference between head and body:
+    - [Member 3: Write your own answer here.]
+2. Why every img needs alt:
+    - [Member 3: Write your own answer here.]
+3. Relative file path and an example from our project:
+    - [Member 3: Write your own answer here.]
